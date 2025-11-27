@@ -1,0 +1,26 @@
+# -------------------------
+# CONFIGURACIÓN BASE GLOBAL
+# EVA ESCOLAR - CONFIG SERVER
+# -------------------------
+
+spring:
+  datasource:
+    url: jdbc:sqlserver://127.0.0.1:1433;databaseName=sp2000;encrypt=false;trustServerCertificate=true
+    username: sa
+    password: Educamos2020*
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
+        format_sql: true
+    show-sql: true
+
+# Logging centralizado
+logging:
+  level:
+    org.hibernate.SQL: INFO
+    com.zaxxer.hikari: INFO
