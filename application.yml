@@ -5,7 +5,8 @@
 
 spring:
   datasource:
-    url: jdbc:sqlserver://127.0.0.1:1433;databaseName=sp2000;encrypt=false;trustServerCertificate=true
+#   url: jdbc:sqlserver://127.0.0.1:1433;databaseName=sp2000;encrypt=false;trustServerCertificate=true
+    url: jdbc:sqlserver://172.25.163.223:1433;databaseName=sp2000;encrypt=false;trustServerCertificate=true
     username: sa
     password: Educamos2020*
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
